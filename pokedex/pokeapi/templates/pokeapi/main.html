@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokedex</title>
+</head>
+<body>
+    <form  method = "get" action ="{% url 'algo' %}" >
+    <label for="poke">Qual o nome do pokemon?</label>
+    <input id="poke" type="text" name="pokemi" value="{{request.GET.pokemi}}">
+    <input type="submit">
+</form>
+ <br>
+<p> habilidade: {{ url_clara }}</p>
+<p> peso: {{ peso }}</p>
+<p>aparencia:</p><img src="{{foto}}"> 
+
+
+
+</body>
+</html>
